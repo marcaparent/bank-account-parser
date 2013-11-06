@@ -202,7 +202,7 @@ if len(accounts) == 0:
         content += "Failed to get your accounts balance. Read log in " + LOG_PATH + " for further details"
 else:
         for account, balance in accounts.iteritems():
-                content += "%s: $%s\n" % (account, balance)
+                content += "%s: %s\n" % (account, balance)
 
 # Message
 message = MIMEText(content, 'plain')
