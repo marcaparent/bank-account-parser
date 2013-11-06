@@ -111,7 +111,7 @@ except NoSuchElementException, e:
 		logging.error("Something went wrong, can't connect to Desjardins' Website, quitting program...")
 		driver.quit()
 		display.stop()
-		sys.exit(0)
+		sys.exit(1)
 	else:
 		try:
 			question_accesd = driver.find_element_by_css_selector("td.t[align=left]")
@@ -119,7 +119,7 @@ except NoSuchElementException, e:
 			logging.error("Question not found, quitting program...")
 			driver.quit()
 			display.stop()
-			sys.exit(0)
+			sys.exit(1)
 		else:
 			# Known questions and answers
 			logging.info('Security question: ' + question_accesd.text)
@@ -138,7 +138,7 @@ except NoSuchElementException, e:
 	logging.error("Something went wrong, can't connect to Desjardins\' Website, quitting program...")
 	driver.quit()
 	display.stop()
-	sys.exit(0)
+	sys.exit(1)
 else:
 	#Logging in
 	logging.info("Trying to log in")
