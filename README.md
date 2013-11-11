@@ -1,6 +1,6 @@
 # Using the script
 
-Fetches account information from a TD Canada Trust or AccesD Desjardins ccount, and sends them by email. The format is the following:
+Fetches account information from a TD Canada Trust or AccesD Desjardins account, and sends them by email. The format is the following:
 
     ACCOUNT NAME: balance
 
